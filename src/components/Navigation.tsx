@@ -1,8 +1,6 @@
 "use client";
 
-import { useTheme } from "next-themes";
-import { useEffect, useState } from "react";
-import { Moon, Sun, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { motion, useScroll, useTransform } from "motion/react";
 import { Button } from "@/components/ui/button";
 import { useNavigationStore } from "@/store/navigation-store";
@@ -14,21 +12,18 @@ export const Navigation = () => {
 		[0, 0.1],
 		["rgba(0, 0, 0, 0)", "rgba(0, 0, 0, 0.8)"]
 	);
-	const { theme, setTheme } = useTheme();
-	const [mounted, setMounted] = useState(false);
+
 
 	const { mobileMenuOpen, activeSection, toggleMobileMenu, scrollToSection } =
 		useNavigationStore();
 
-	useEffect(() => {
-		setMounted(true);
-	}, []);
 
 	const navItems = [
 		{ label: "About", id: "about" },
+		{ label: "Tech-stack", id: "tech" },
 		{ label: "Experience", id: "experience" },
-		{ label: "Skills", id: "skills" },
 		{ label: "Projects", id: "projects" },
+		{ label: "Skills", id: "skills" },
 		{ label: "Awards", id: "awards" },
 		{ label: "Education", id: "education" },
 		{ label: "Contact", id: "contact" },

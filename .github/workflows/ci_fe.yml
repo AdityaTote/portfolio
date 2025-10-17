@@ -1,0 +1,37 @@
+name: deploy front-end to cloudflare workers
+on:
+  push:
+    branches:
+      - main
+
+env:
+  CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+  CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout code repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: setup bun
+        uses: oven-sh/bun-action@v2
+        with:
+          bun-version: stable
+
+      - name: install dependencies
+        run: bun install
+
+      - name: install wrangler
+        run: bun install -g wrangler
+
+      - name: deploy to cloudflare workers
+        run: |
+          bun run deploy:fe
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}

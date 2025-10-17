@@ -1,0 +1,27 @@
+name: build
+
+on:
+  push:
+    branches:
+      - "**"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      
+      - name: setup bun
+        uses: oven-sh/bun-action@v2
+        with:
+          bun-version: stable
+
+      - name: install dependencies
+        run: bun install
+      
+      - name: build project
+        run: bun build
