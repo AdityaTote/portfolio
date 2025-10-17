@@ -1,0 +1,158 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@layer base {
+	:root {
+		--background: 144 100% 3%;
+		--foreground: 0 0% 95%;
+
+		--card: 144 20% 6%;
+		--card-foreground: 0 0% 95%;
+
+		--popover: 144 20% 6%;
+		--popover-foreground: 0 0% 95%;
+
+		--primary: 142 70% 50%;
+		--primary-foreground: 0 0% 10%;
+
+		--secondary: 199 89% 48%;
+		--secondary-foreground: 0 0% 10%;
+
+		--accent: 180 100% 50%;
+		--accent-foreground: 0 0% 10%;
+
+		--muted: 0 0% 15%;
+		--muted-foreground: 0 0% 60%;
+
+		--destructive: 0 84% 60%;
+		--destructive-foreground: 0 0% 98%;
+
+		--border: 0 0% 18%;
+		--input: 0 0% 18%;
+		--ring: 142 70% 50%;
+
+		--radius: 0.25rem;
+
+		--gradient-terminal: linear-gradient(
+			135deg,
+			hsl(142 70% 50% / 0.1) 0%,
+			transparent 100%
+		);
+		--gradient-grid: linear-gradient(
+				90deg,
+				hsl(0 0% 18% / 0.3) 1px,
+				transparent 1px
+			),
+			linear-gradient(0deg, hsl(0 0% 18% / 0.3) 1px, transparent 1px);
+		--gradient-spotlight: radial-gradient(
+			circle at center,
+			hsl(142 70% 50% / 0.05),
+			transparent 70%
+		);
+
+		--shadow-glow: 0 0 20px hsl(142 70% 50% / 0.2);
+		--shadow-glow-strong: 0 0 30px hsl(142 70% 50% / 0.3);
+		--shadow-code: 0 4px 16px hsl(0 0% 0% / 0.6);
+
+		--theme-primary: hsl(142, 70%, 50%);
+		--theme-primary-glow: rgba(34, 197, 94, 0.3);
+		--theme-secondary: hsl(199, 89%, 48%);
+		--theme-accent: hsl(180, 100%, 50%);
+	}
+
+	* {
+		border-color: hsl(var(--border));
+	}
+
+	body {
+		background-color: hsl(var(--background));
+		color: hsl(var(--foreground));
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+			"Oxygen", "Ubuntu", sans-serif;
+	}
+
+	html {
+		scroll-behavior: smooth;
+	}
+
+	.font-mono-display {
+		font-family: "JetBrains Mono", "Fira Code", "Courier New", monospace;
+		font-feature-settings: "liga" 1, "calt" 1;
+	}
+
+	.bg-grid-pattern {
+		background-image: var(--gradient-grid);
+		background-size: 50px 50px;
+	}
+
+	.text-terminal-glow {
+		text-shadow: 0 0 10px hsl(var(--primary) / 0.5);
+	}
+
+	.code-block {
+		font-family: "JetBrains Mono", "Fira Code", "Courier New", monospace;
+		font-feature-settings: "liga" 1, "calt" 1;
+		font-size: 0.875rem;
+		background-color: hsl(var(--muted));
+		padding: 0.5rem 1rem;
+		border: 1px solid hsl(var(--border));
+	}
+}
+
+@keyframes terminal-blink {
+	0%,
+	49% {
+		opacity: 1;
+	}
+	50%,
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes scan-line {
+	0% {
+		transform: translateY(-100%);
+	}
+	100% {
+		transform: translateY(100%);
+	}
+}
+
+@keyframes border-glow {
+	0%,
+	100% {
+		border-color: hsl(var(--border));
+	}
+	50% {
+		border-color: var(--theme-primary);
+	}
+}
+
+.animate-terminal-blink {
+	animation: terminal-blink 1.2s infinite;
+}
+
+.animate-scan-line {
+	animation: scan-line 8s linear infinite;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: hsl(var(--background));
+}
+
+::-webkit-scrollbar-thumb {
+	background: hsl(var(--muted));
+	border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: var(--theme-primary);
+}
