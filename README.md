@@ -172,7 +172,7 @@ Backend & Web3 Engineer
 - 🌐 Portfolio: [adityatote.dev](https://adityatote.dev)
 - 💼 LinkedIn: [linkedin.com/in/adityatote](https://linkedin.com/in/adityatote)
 - 🐙 GitHub: [github.com/AdityaTote](https://github.com/AdityaTote)
-- ✉️ Email: adityatote.dev@gmail.com
+- ✉️ Email: adityatote24@gmail.com
 
 ---
 
