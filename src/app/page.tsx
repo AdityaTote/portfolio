@@ -4,7 +4,7 @@ import { ExperienceSection } from "@/components/ExperienceSection";
 import { SkillsSection } from "@/components/SkillsSection";
 import { ProjectsSection } from "@/components/ProjectSection";
 import { EducationSection } from "@/components/EducationSection";
-import { AwardsSection } from "@/components/AwardsSection";
+import { AwardsSection } from "@/components/ActivitiesSection";
 import { TechStackSection } from "@/components/TechStackSection";
 import { ContactSection } from "@/components/ContactSection";
 import { Navigation } from "@/components/Navigation";
@@ -34,7 +34,7 @@ export default function Home() {
 				<SectionWrapper id="skills">
 					<SkillsSection />
 				</SectionWrapper>
-				<SectionWrapper id="awards">
+				<SectionWrapper id="activities">
 					<AwardsSection />
 				</SectionWrapper>
 				<SectionWrapper id="education">

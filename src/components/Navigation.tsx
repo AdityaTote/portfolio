@@ -4,6 +4,7 @@ import { Menu, X } from "lucide-react";
 import { motion, useScroll, useTransform } from "motion/react";
 import { Button } from "@/components/ui/button";
 import { useNavigationStore } from "@/store/navigation-store";
+import { GithubIcon } from "@/icons/github-icon";
 
 export const Navigation = () => {
 	const { scrollYProgress } = useScroll();
@@ -13,10 +14,8 @@ export const Navigation = () => {
 		["rgba(0, 0, 0, 0)", "rgba(0, 0, 0, 0.8)"]
 	);
 
-
 	const { mobileMenuOpen, activeSection, toggleMobileMenu, scrollToSection } =
 		useNavigationStore();
-
 
 	const navItems = [
 		{ label: "About", id: "about" },
@@ -24,7 +23,7 @@ export const Navigation = () => {
 		{ label: "Experience", id: "experience" },
 		{ label: "Projects", id: "projects" },
 		{ label: "Skills", id: "skills" },
-		{ label: "Awards", id: "awards" },
+		{ label: "Activities", id: "activities" },
 		{ label: "Education", id: "education" },
 		{ label: "Contact", id: "contact" },
 	];
@@ -72,6 +71,19 @@ export const Navigation = () => {
 						</div>
 
 						<div className="flex items-center gap-2">
+							<motion.a
+								href="https://github.com/AdityaTote/portfolio"
+								target="_blank"
+								rel="noopener noreferrer"
+								className="hidden lg:flex items-center justify-center w-12 h-12 text-muted-foreground hover:text-emerald-400 transition-colors"
+								whileHover={{ scale: 1.15 }}
+								whileTap={{ scale: 0.95 }}
+								aria-label="View GitHub repository"
+							>
+								<div className="w-12 h-12">
+									<GithubIcon />
+								</div>
+							</motion.a>
 							<Button
 								variant="ghost"
 								size="icon"

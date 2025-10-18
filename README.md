@@ -10,14 +10,14 @@
 
 **A modern backend-engineer-focused portfolio built with Next.js, Hono, and TypeScript — designed to showcase my work across Web2, Web3, and system design.**
 
-[🌐 View Live](#) · [🐛 Report Issue](#) · [✨ Request Feature](#)
+[🌐 View Live](https://adityatote.tech)
 
 </div>
 
 ---
 
 ## 📖 About
-
+w
 This portfolio represents my journey as a **Backend Engineer** passionate about building **scalable APIs, distributed systems, and exploring blockchain technologies**.
 
 The site is built for performance, minimalism, and type safety — with a terminal-inspired aesthetic to match my backend identity.

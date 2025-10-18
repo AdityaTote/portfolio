@@ -37,7 +37,7 @@ export const AwardsSection = () => {
 						07 — Achievements
 					</span>
 					<h2 className="text-5xl md:text-6xl font-bold mt-4 mb-6">
-						Awards & Recognition
+						Achievements & Activities
 					</h2>
 					<p className="text-xl text-muted-foreground max-w-2xl">
 						Competitions, hackathons, and milestones throughout my academic and
