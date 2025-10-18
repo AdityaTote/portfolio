@@ -147,17 +147,6 @@ Also works with:
 
 ---
 
-## 🤝 Contributing
-
-Feedback and ideas are always welcome.
-
-1. Fork this repo
-2. Create a new branch (`git checkout -b feature/new-feature`)
-3. Commit your changes (`git commit -m 'Add new feature'`)
-4. Push and open a PR
-
----
-
 ## � License
 
 This project is open-source under the MIT License.
@@ -168,10 +157,10 @@ This project is open-source under the MIT License.
 
 **Aditya Tote**  
 Backend & Web3 Engineer
-
-- 🌐 Portfolio: [adityatote.dev](https://adityatote.dev)
-- 💼 LinkedIn: [linkedin.com/in/adityatote](https://linkedin.com/in/adityatote)
+- 🌐 Portfolio: [adityatote.tech](https://adityatote.tech)
 - 🐙 GitHub: [github.com/AdityaTote](https://github.com/AdityaTote)
+- 🐦 X: [x.com/AdityaTote24](https://x.com/AdityaTote24)
+- 💼 LinkedIn: [linkedin.com/in/adityatote](https://linkedin.com/in/aditya-tote)
 - ✉️ Email: adityatote24@gmail.com
 
 ---
