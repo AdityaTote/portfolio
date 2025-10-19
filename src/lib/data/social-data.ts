@@ -23,7 +23,7 @@ export const socials = [
 	{
 		icon: Mail,
 		label: "Email",
-		handle: "adityatote24@gmail.com",
-		link: "mailto:adityatote24@gmail.com",
+		handle: "me@adityatote.tech",
+		link: "mailto:me@adityatote.tech",
 	},
 ];
