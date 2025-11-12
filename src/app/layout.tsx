@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-	title: "Aditya Tote - Backend Specialist",
+	title: "Aditya Tote - Backend Developer",
 	description:
 		"Portfolio of Aditya Tote - Software engineer specializing in Go, Python, and cloud technologies. Building scalable backend systems and distributed applications.",
 	keywords: [

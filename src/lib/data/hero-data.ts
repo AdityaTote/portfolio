@@ -1,7 +1,7 @@
 export const heroData = {
 	terminal: {
 		prompt: "~/adityatote",
-		username: "backend@prod",
+		username: "reek@dev",
 	},
 	role: "Backend Developer",
 	name: "Aditya Tote",
@@ -18,13 +18,13 @@ export const heroData = {
 		},
 		secondary: {
 			text: "resume[]",
-			link: "https://8zyjrpzspd.ufs.sh/f/CItOKkgy2F95vr9nNndjOxZYVNKPa1LTtcgMGpf2FshQH90S",
+			link: "https://8zyjrpzspd.ufs.sh/f/CItOKkgy2F95sNY7XwNABVRyl12zk8wmGQpJHKg4E9FteTof",
 		},
 	},
 	stats: {
 		requestsPerSec: "12,480",
-		latency: "19ms",
-		uptime: "99.98%",
+		latency: "99ms",
+		uptime: "99.%",
 		activeUsers: "1.8M",
 	},
 };

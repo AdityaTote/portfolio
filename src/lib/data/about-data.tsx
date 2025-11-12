@@ -63,7 +63,6 @@ export const aboutSection = {
 	sectionNumber: "01",
 	sectionLabel: "ABOUT",
 	title: {
-		main: "Building",
-		highlight: "systems",
+		main: "$ whoami",
 	},
 };
