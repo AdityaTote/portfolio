@@ -31,6 +31,8 @@ interface SkillCategory {
 	icon: typeof Code2;
 	skills: string[];
 	color: string;
+	textClass: string;
+	borderClass: string;
 }
 
 export const skillCategories: SkillCategory[] = [
@@ -47,6 +49,8 @@ export const skillCategories: SkillCategory[] = [
 			"Microservices / Clean Architecture",
 		],
 		color: "from-blue-500/20 to-cyan-500/20",
+		textClass: "group-hover/tag:text-blue-400",
+		borderClass: "border-blue-500/20 group-hover/tag:border-blue-500/50",
 	},
 	{
 		title: "DevOps & Infrastructure",
@@ -60,6 +64,8 @@ export const skillCategories: SkillCategory[] = [
 			"Redis Caching",
 		],
 		color: "from-orange-500/20 to-red-500/20",
+		textClass: "group-hover/tag:text-orange-400",
+		borderClass: "border-orange-500/20 group-hover/tag:border-orange-500/50",
 	},
 	{
 		title: "Web3 & Blockchain",
@@ -74,6 +80,8 @@ export const skillCategories: SkillCategory[] = [
 			"Decentralized Auth & dApp Development",
 		],
 		color: "from-indigo-500/20 to-violet-500/20",
+		textClass: "group-hover/tag:text-indigo-400",
+		borderClass: "border-indigo-500/20 group-hover/tag:border-indigo-500/50",
 	},
 	{
 		title: "Frontend Development",
@@ -87,6 +95,8 @@ export const skillCategories: SkillCategory[] = [
 			"State Management (Zustand)",
 		],
 		color: "from-purple-500/20 to-pink-500/20",
+		textClass: "group-hover/tag:text-pink-400",
+		borderClass: "border-pink-500/20 group-hover/tag:border-pink-500/50",
 	},
 	{
 		title: "Database & ORM",
@@ -100,6 +110,8 @@ export const skillCategories: SkillCategory[] = [
 			"Database Migrations & Optimization",
 		],
 		color: "from-green-500/20 to-emerald-500/20",
+		textClass: "group-hover/tag:text-emerald-400",
+		borderClass: "border-emerald-500/20 group-hover/tag:border-emerald-500/50",
 	},
 	{
 		title: "Tools & Utilities",
@@ -115,5 +127,7 @@ export const skillCategories: SkillCategory[] = [
 			"Shell Scripting",
 		],
 		color: "from-yellow-500/20 to-amber-500/20",
+		textClass: "group-hover/tag:text-yellow-400",
+		borderClass: "border-yellow-500/20 group-hover/tag:border-yellow-500/50",
 	},
 ];

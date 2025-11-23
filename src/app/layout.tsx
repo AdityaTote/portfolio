@@ -1,4 +1,5 @@
 import "./globals.css";
+import { ReactNode } from "react";
 import type { Metadata } from "next";
 import { ThemeProvider } from "next-themes";
 import { ThemeProvider as ColorThemeProvider } from "@/components/ThemeProvider";
@@ -22,17 +23,26 @@ export const metadata: Metadata = {
 	keywords: [
 		"software engineer",
 		"backend developer",
-		"golang",
 		"python",
 		"aws",
-		"kubernetes",
 		"microservices",
 		"api development",
-		"cloud computing",
 	],
 	authors: [{ name: "Aditya Tote" }],
+	icons: [
+		{
+			rel: "icon",
+			url: "/svg/favicon-light.svg",
+			media: "(prefers-color-scheme: light)",
+		},
+		{
+			rel: "icon",
+			url: "/svg/favicon-dark.svg",
+			media: "(prefers-color-scheme: dark)",
+		},
+	],
 	openGraph: {
-		title: "Aditya Tote - Software Engineer & Backend Specialist",
+		title: "Aditya Tote - Software Engineer & Backend Developer",
 		description:
 			"Portfolio of Aditya Tote - Software engineer specializing in building scalable backend systems.",
 		type: "website",
@@ -42,7 +52,7 @@ export const metadata: Metadata = {
 export default function RootLayout({
 	children,
 }: Readonly<{
-	children: React.ReactNode;
+	children: ReactNode;
 }>) {
 	return (
 		<html lang="en" suppressHydrationWarning>

@@ -20,9 +20,9 @@ export const experiences = [
 		location: "Remote",
 		achievements: [
 			"Developed backend systems for the test portal and e-commerce modules using Node.js and Express",
-			"Integrated RESTful APIs with frontend modules for the job-portal built with Next.js and TanStack Query",
 			"Designed database schemas in PostgreSQL and MongoDB for scalable and efficient data storage",
-			"Contributed to frontend API integration, ensuring smooth data flow and minimal latency",
+			"Integrated RESTful APIs with frontend modules for the job-portal built with Next.js and TanStack Query",
+			"Focused primarily on backend development while contributing to full-stack features when needed",
 			"Worked collaboratively in an agile team, managing feature delivery across multiple projects",
 		],
 		technologies: [
