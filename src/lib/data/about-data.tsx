@@ -54,9 +54,9 @@ export const aboutCards: AboutCard[] = [
 
 export const aboutBio: AboutBio = {
 	mainText:
-		"Backend & AI Systems Engineer. Specializing in building high-performance inference pipelines, Agentic workflows, and decentralized infrastructure. I bridge the gap between raw LLMs and reliable, production-grade systems.",
+		"I build backend systems that are fast, stable, and built with intention. Over time, I’ve stepped into AI engineering—working on inference pipelines, agentic workflows, and the infrastructure needed to make modern models actually usable in production. I like operating where backend engineering meets emerging AI tech, turning ideas into systems that hold up under real load.",
 	secondaryText:
-		"Recently, I've been diving into blockchain technologies, exploring how decentralized architectures and smart contracts can shape the next generation of backend systems. Outside of coding, I enjoy contributing to open-source projects, learning new system design paradigms, and staying curious about how distributed systems evolve.",
+		"Lately, I’ve been exploring decentralized systems and how blockchain primitives can reshape backend design. Smart contracts, distributed coordination, on-chain logic—there’s something fascinating in how these models rethink trust, scale, and system boundaries. Outside of that, I’m usually experimenting with new AI tooling, digging into open-source ideas, and staying curious about how infrastructure is evolving.",
 };
 
 export const aboutSection = {

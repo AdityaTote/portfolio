@@ -29,7 +29,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
 	title: "Aditya Tote - Backend Developer",
 	description:
-		"Portfolio of Aditya Tote - Software engineer specializing in Go, Python, and cloud technologies. Building scalable backend systems and distributed applications.",
+		"Portfolio of Aditya Tote - Software engineer specializing in Typescript, Python, and cloud technologies. Building scalable backend systems and distributed applications.",
 	keywords: [
 		"software engineer",
 		"backend developer",
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
 		},
 	],
 	openGraph: {
-		title: "Aditya Tote - Software Engineer & Backend Developer",
+		title: "Aditya Tote - Backend Developer",
 		description:
 			"Portfolio of Aditya Tote - Software engineer specializing in building scalable backend systems.",
 		type: "website",
