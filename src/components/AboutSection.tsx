@@ -32,8 +32,8 @@ const highlights = [
 export const AboutSection = () => {
 	return (
 		<section className="py-24 px-6 relative bg-[#0a0f0d]">
-			<div className="absolute inset-0 bg-[linear-gradient(rgba(16,185,129,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(16,185,129,0.03)_1px,transparent_1px)] bg-[size:50px_50px]" />
-			<div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,rgba(16,185,129,0.08),transparent_50%)] pointer-events-none" />
+		<div className="absolute inset-0 bg-[linear-gradient(rgba(16,185,129,0.025)_1px,transparent_1px),linear-gradient(90deg,rgba(16,185,129,0.025)_1px,transparent_1px)] bg-[size:48px_48px]" />
+		<div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,rgba(16,185,129,0.06),transparent_50%)] pointer-events-none" />
 
 			<div className="max-w-4xl mx-auto relative">
 				<motion.div

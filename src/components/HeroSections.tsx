@@ -10,9 +10,9 @@ export const HeroSection = () => {
 		<section className="relative min-h-screen flex items-center px-6 py-20 overflow-hidden">
 			<div className="absolute inset-0 bg-[#0a0f0d]" />
 
-			<div className="absolute inset-0 bg-[linear-gradient(rgba(16,185,129,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(16,185,129,0.03)_1px,transparent_1px)] bg-[size:50px_50px]" />
+			<div className="absolute inset-0 bg-[linear-gradient(rgba(16,185,129,0.025)_1px,transparent_1px),linear-gradient(90deg,rgba(16,185,129,0.025)_1px,transparent_1px)] bg-[size:48px_48px]" />
 
-			<div className="absolute top-1/4 left-1/3 w-[600px] h-[600px] bg-[radial-gradient(ellipse_at_center,rgba(16,185,129,0.12),transparent_70%)] pointer-events-none" />
+			<div className="absolute top-1/4 left-1/3 w-[600px] h-[600px] bg-[radial-gradient(ellipse_at_center,rgba(16,185,129,0.1),transparent_70%)] pointer-events-none" />
 
 			<div className="max-w-7xl mx-auto w-full relative z-10">
 				<div className="grid lg:grid-cols-[1fr_400px] gap-16 items-center">
@@ -75,7 +75,7 @@ export const HeroSection = () => {
 							<div className="font-mono text-sm text-muted-foreground">];</div>
 						</motion.div>
 						<motion.div
-							className="flex gap-4 pt-2"
+							className="flex flex-wrap gap-4 pt-2"
 							initial={{ opacity: 0, y: 20 }}
 							animate={{ opacity: 1, y: 0 }}
 							transition={{ delay: 0.9, duration: 0.6 }}
@@ -97,11 +97,26 @@ export const HeroSection = () => {
 								asChild
 							>
 								<a
-									href={heroData.buttons.secondary.link}
-									target="_blank"
-									rel="noopener noreferrer"
+									href="/resume.pdf"
+									download="Aditya_Tote_Resume.pdf"
+									className="flex items-center gap-2"
 								>
-									{heroData.buttons.secondary.text}
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										strokeWidth="2"
+										strokeLinecap="round"
+										strokeLinejoin="round"
+									>
+										<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+										<polyline points="7 10 12 15 17 10" />
+										<line x1="12" x2="12" y1="15" y2="3" />
+									</svg>
+									Download Resume
 								</a>
 							</Button>
 						</motion.div>

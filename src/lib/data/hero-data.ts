@@ -3,12 +3,12 @@ export const heroData = {
 		prompt: "~/adityatote",
 		username: "reek@dev",
 	},
-	role: "Backend Developer",
+	role: "Backend & AI Systems Engineer",
 	name: "Aditya Tote",
 	expertise: [
+		"AI Infrastructure",
+		"Agentic Workflows",
 		"Scalable APIs",
-		"System Design",
-		"DevOps Automation",
 		"Smart Contracts",
 	],
 	buttons: {

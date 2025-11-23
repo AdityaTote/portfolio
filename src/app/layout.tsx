@@ -1,6 +1,6 @@
 import "./globals.css";
 import { ReactNode } from "react";
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { ThemeProvider } from "next-themes";
 import { ThemeProvider as ColorThemeProvider } from "@/components/ThemeProvider";
 import { Geist, Geist_Mono } from "next/font/google";
@@ -15,6 +15,16 @@ const geistMono = Geist_Mono({
 	variable: "--font-geist-mono",
 	subsets: ["latin"],
 });
+
+export const viewport: Viewport = {
+	width: "device-width",
+	initialScale: 1,
+	maximumScale: 5,
+	themeColor: [
+		{ media: "(prefers-color-scheme: light)", color: "#10b981" },
+		{ media: "(prefers-color-scheme: dark)", color: "#0a0f0d" },
+	],
+};
 
 export const metadata: Metadata = {
 	title: "Aditya Tote - Backend Developer",
@@ -46,6 +56,16 @@ export const metadata: Metadata = {
 		description:
 			"Portfolio of Aditya Tote - Software engineer specializing in building scalable backend systems.",
 		type: "website",
+		locale: "en_US",
+		siteName: "Aditya Tote Portfolio",
+	},
+	robots: {
+		index: true,
+		follow: true,
+		googleBot: {
+			index: true,
+			follow: true,
+		},
 	},
 };
 

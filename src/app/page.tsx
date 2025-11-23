@@ -10,10 +10,12 @@ import { ContactSection } from "@/components/ContactSection";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { SectionWrapper } from "@/components/SectionWrapper";
+import { ScrollProgress } from "@/components/ScrollProgress";
 
 export default function Home() {
 	return (
 		<div className="relative">
+			<ScrollProgress />
 			<Navigation />
 			<main>
 				<SectionWrapper id="hero">

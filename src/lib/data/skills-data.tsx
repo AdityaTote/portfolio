@@ -5,6 +5,7 @@ import {
 	GitBranch,
 	Layers,
 	Wrench,
+	Brain,
 } from "lucide-react";
 import {
 	BunIcon,
@@ -84,6 +85,21 @@ export const skillCategories: SkillCategory[] = [
 		borderClass: "border-gray-800 group-hover/tag:border-emerald-500/40",
 	},
 	{
+		title: "AI Engineering",
+		icon: Brain,
+		skills: [
+			"Google ADK",
+			"Model Context Protocol (MCP)",
+			"Pinecone / ChromaDB",
+			"GPT / Claude / Gemini",
+			"RAG Pipelines / Agentic Workflows",
+			"Prompt Engineering",
+		],
+		color: "from-emerald-500/10 to-emerald-500/5",
+		textClass: "group-hover/tag:text-emerald-400",
+		borderClass: "border-gray-800 group-hover/tag:border-emerald-500/40",
+	},
+	{
 		title: "Frontend Development",
 		icon: Layers,
 		skills: [
@@ -118,9 +134,6 @@ export const skillCategories: SkillCategory[] = [
 		icon: Wrench,
 		skills: [
 			"Git / GitHub / Postman",
-			"Google Agent Development Kit (ADK)",
-			"Vertex AI / Gemini Models",
-			"Model Context Protocol (MCP)",
 			"Better Auth / NextAuth",
 			"Zod Schema Validation",
 			"VS Code / Docker Compose / ngrok",

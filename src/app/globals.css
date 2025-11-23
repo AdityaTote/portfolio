@@ -1,6 +1,10 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+html {
+  scroll-behavior: smooth;
+}
+
 @layer base {
 	:root {
 		--background: 144 100% 3%;
@@ -75,6 +79,14 @@
 
 	html {
 		scroll-behavior: smooth;
+	}
+
+	/* Enable horizontal scrolling */
+	.overflow-x-auto {
+		overflow-x: auto;
+		overflow-y: visible;
+		-webkit-overflow-scrolling: touch;
+		scroll-behavior: auto; /* Override smooth scroll for horizontal */
 	}
 
 	.font-mono-display {
@@ -155,4 +167,23 @@
 
 ::-webkit-scrollbar-thumb:hover {
 	background: var(--theme-primary);
+}
+
+/* Horizontal scrollbar for project section */
+.overflow-x-auto::-webkit-scrollbar {
+	height: 8px;
+}
+
+.overflow-x-auto::-webkit-scrollbar-track {
+	background: rgba(16, 185, 129, 0.05);
+	border-radius: 4px;
+}
+
+.overflow-x-auto::-webkit-scrollbar-thumb {
+	background: rgba(16, 185, 129, 0.3);
+	border-radius: 4px;
+}
+
+.overflow-x-auto::-webkit-scrollbar-thumb:hover {
+	background: rgba(16, 185, 129, 0.5);
 }

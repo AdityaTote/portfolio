@@ -11,7 +11,9 @@
 		"deploy": "bun pages:build && wrangler pages deploy"
 	},
 	"dependencies": {
+		"@google/generative-ai": "^0.24.1",
 		"@radix-ui/react-slot": "^1.2.3",
+		"@radix-ui/react-switch": "^1.2.6",
 		"@radix-ui/react-toast": "^1.2.15",
 		"class-variance-authority": "^0.7.1",
 		"clsx": "^2.1.1",
