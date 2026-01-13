@@ -3,12 +3,11 @@ export const heroData = {
 		prompt: "~/adityatote",
 		username: "reek@dev",
 	},
-	role: "Backend & AI Systems Engineer",
+	role: "Backend Developer",
 	name: "Aditya Tote",
 	expertise: [
-		"AI Infrastructure",
-		"Agentic Workflows",
 		"Scalable APIs",
+		"AI Infrastructure",
 		"Smart Contracts",
 	],
 	buttons: {
@@ -18,7 +17,7 @@ export const heroData = {
 		},
 		secondary: {
 			text: "resume[]",
-			link: "https://8zyjrpzspd.ufs.sh/f/CItOKkgy2F95sNY7XwNABVRyl12zk8wmGQpJHKg4E9FteTof",
+			link: "https://8zyjrpzspd.ufs.sh/f/CItOKkgy2F95JSweeANjOtcfFDaJkqzYnp9Qe7PBITxG20Wd",
 		},
 	},
 	stats: {

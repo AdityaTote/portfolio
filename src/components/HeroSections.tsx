@@ -97,7 +97,7 @@ export const HeroSection = () => {
 								asChild
 							>
 								<a
-									href="/resume.pdf"
+									href={heroData.buttons.secondary.link}
 									download="Aditya_Tote_Resume.pdf"
 									className="flex items-center gap-2"
 								>
@@ -116,7 +116,7 @@ export const HeroSection = () => {
 										<polyline points="7 10 12 15 17 10" />
 										<line x1="12" x2="12" y1="15" y2="3" />
 									</svg>
-									Download Resume
+									{heroData.buttons.secondary.text}
 								</a>
 							</Button>
 						</motion.div>
