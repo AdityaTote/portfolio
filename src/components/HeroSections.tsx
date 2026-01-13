@@ -99,6 +99,7 @@ export const HeroSection = () => {
 								<a
 									href={heroData.buttons.secondary.link}
 									download="Aditya_Tote_Resume.pdf"
+									target="_blank"
 									className="flex items-center gap-2"
 								>
 									<svg
