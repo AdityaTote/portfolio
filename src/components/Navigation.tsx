@@ -19,7 +19,7 @@ export const Navigation = () => {
 
 	const navItems = [
 		{ label: "About", id: "about" },
-		{ label: "Tech-stack", id: "tech" },
+		// { label: "Tech-stack", id: "tech" },
 		{ label: "Experience", id: "experience" },
 		{ label: "Projects", id: "projects" },
 		{ label: "Skills", id: "skills" },

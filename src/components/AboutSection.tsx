@@ -1,33 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Card } from "@/components/ui/card";
 import { aboutBio, aboutSection } from "@/lib/data";
-import { Code2, Database, Zap } from "lucide-react";
 
-const highlights = [
-	{
-		icon: Code2,
-		label: "API Design",
-		color: "text-emerald-400",
-		bgColor: "bg-emerald-500/10",
-		borderColor: "border-emerald-500/20",
-	},
-	{
-		icon: Database,
-		label: "Database Expert",
-		color: "text-cyan-400",
-		bgColor: "bg-cyan-500/10",
-		borderColor: "border-cyan-500/20",
-	},
-	{
-		icon: Zap,
-		label: "System Design",
-		color: "text-blue-400",
-		bgColor: "bg-blue-500/10",
-		borderColor: "border-blue-500/20",
-	},
-];
 
 export const AboutSection = () => {
 	return (
@@ -66,54 +41,11 @@ export const AboutSection = () => {
 					viewport={{ once: true }}
 					transition={{ duration: 0.5, delay: 0.2 }}
 				>
-					<div className="text-center space-y-4">
+					<div className="text-center">
 						<p className="text-xl text-muted-foreground leading-relaxed">
-							{aboutBio.mainText}
+							{aboutBio.mainText} {aboutBio.secondaryText}
 						</p>
 					</div>
-
-					<div className="flex flex-wrap justify-center gap-4 pt-6">
-						{highlights.map((item, index) => {
-							const Icon = item.icon;
-							return (
-								<motion.div
-									key={item.label}
-									initial={{ opacity: 0, scale: 0.9 }}
-									whileInView={{ opacity: 1, scale: 1 }}
-									viewport={{ once: true }}
-									transition={{ duration: 0.3, delay: 0.3 + index * 0.1 }}
-								>
-									<div
-										className={`flex items-center gap-3 px-5 py-3 ${item.bgColor} ${item.borderColor} border rounded-full backdrop-blur-sm hover:scale-105 transition-transform duration-300`}
-									>
-										<Icon className={`h-5 w-5 ${item.color}`} />
-										<span className="text-sm font-medium text-foreground">
-											{item.label}
-										</span>
-									</div>
-								</motion.div>
-							);
-						})}
-					</div>
-
-					<motion.div
-						initial={{ opacity: 0, y: 20 }}
-						whileInView={{ opacity: 1, y: 0 }}
-						viewport={{ once: true }}
-						transition={{ duration: 0.5, delay: 0.5 }}
-						className="pt-8"
-					>
-						<Card className="p-6 bg-gradient-to-br from-emerald-500/5 via-transparent to-transparent border-emerald-500/20">
-							<div className="flex items-start gap-4">
-								<div className="text-3xl">🚀</div>
-								<div className="space-y-2">
-									<p className="text-base text-muted-foreground leading-relaxed">
-										{aboutBio.secondaryText}
-									</p>
-								</div>
-							</div>
-						</Card>
-					</motion.div>
 				</motion.div>
 			</div>
 		</section>
